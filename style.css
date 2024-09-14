@@ -1,0 +1,89 @@
+/* Styling form and resume sections */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f6eded; /* Soft light gray background */
+}
+
+form {
+    margin: auto;
+    background-color: #c8b7eb; /* Soft white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(28, 27, 27, 0.1); /* Lighter shadow */
+    padding: 20px;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d2828; /* Dark gray for better readability */
+}
+
+fieldset {
+    border: 2px solid #6dedf1; /* Light teal border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #bcc7c8; /* Light teal background */
+}
+
+legend {
+    font-weight: bold;
+    text-align: left;
+    color: #1d1d1d; /* Darker gray */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333333; /* Darker shade of gray */
+}
+
+input,
+textarea {
+    margin-top: 4px;
+    padding: 8px;
+    width: calc(100% - 16px);
+    border: 1px solid #a8dadc; /* Light teal border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; /* White background */
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #457b9d; /* Muted dark blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly lighter shadow */
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1d3557; /* Darker blue for hover effect */
+}
+
+#resume-display {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #a8dadc; /* Light teal border */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Soft white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    /*Making the resume editable*/
+    outline: none;
+}
+
+#resume-display h2 {
+    color: #514f4f; /* Dark gray */
+}
