@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shareable Resume Bulider</title>
+    <title>Shareable Resume Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Shareable Resume Bulider</h1>
+    <h1>Shareable Resume Builder</h1>
     <form id="resume-form">
         <fieldset>
             <legend>Personal Information</legend>
+
+            <label for="profile-image">Profile Picture:</label>
+            <input type="file" id="profile-image" accept="image/*">
 
             <label for="username">Username:</label>
             <input type="text" id="username" placeholder="Enter your username" required>
@@ -22,7 +25,8 @@
             <input type="email" id="email" placeholder="Enter your email" required>
 
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" placeholder="Enter your phone" required>
+            <input type="text" id="phone" placeholder="Enter your phone" required>
+
         </fieldset>
 
         <fieldset>
@@ -51,6 +55,7 @@
     <!--Dynamic and Editable Resume-->
     <div id="resume-display" contenteditable="true">
         <!--Resume will be genrated blow-->
+        <div id="resume-image-container"></div>
     </div>
 
     <br>
